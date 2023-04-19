@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>List Product</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!--    <link rel="stylesheet" href="/bootstrap.min.css">-->
+  <!--    <script src="/bootstrap.min.js"></script>-->
+  <!--    <script src="/jquery-3.6.4.min.js"></script>-->
+  <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+<!-- header-->
+<div th:replace="header::header"></div>
+<!--Main-->
+<!--    tat ca sp-->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col text-center">
+      <div class="font-weight-bold text-uppercase">
+        <h2>Tat ca san pham</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-deck">
+    <div class="card">
+      <img src="/image/cat_11.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with tent is a little bit longer.</p>
+        <button class="btn btn-outline-info">View product</button>
+      </div>
+      <!--                <div class="card-footer">-->
+      <!--                    <small class="text-muted">Last updated 3 mins ago</small>-->
+      <!--                </div>-->
+    </div>
+    <div class="card">
+      <img src="/image/cat_11.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below </p>
+        <button class="btn btn-outline-info">View product</button>
+      </div>
+      <!--                <div class="card-footer">-->
+      <!--                    <small class="text-muted">Last updated 3 mins ago</small>-->
+      <!--                </div>-->
+    </div>
+    <div class="card">
+      <img src="/image/cat_11.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with suo show that equal height action.</p>
+        <button class="btn btn-outline-info">View product</button>
+      </div>
+      <!--                <div class="card-footer">-->
+      <!--                    <small class="text-muted">Last updated 3 mins ago</small>-->
+      <!--                </div>-->
+    </div>
+
+    <div class="card">
+      <img src="/image/cat_22.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with</p>
+        <button class="btn btn-outline-info align-bottom">View product</button>
+      </div>
+      <!--                <div class="card-footer">-->
+      <!--                    <small class="text-muted">Last updated 3 mins ago</small>-->
+      <!--                </div>-->
+    </div>
+  </div>
+</div>
+
+<!-- footer-->
+<div th:replace="footer::footer"></div>
+</body>
+</html>

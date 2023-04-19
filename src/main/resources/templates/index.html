@@ -1,0 +1,201 @@
+
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!--    <link rel="stylesheet" href="/bootstrap.min.css">-->
+<!--    <script src="/bootstrap.min.js"></script>-->
+<!--    <script src="/jquery-3.6.4.min.js"></script>-->
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <div class="supper_container">
+        <!-- Header -->
+        <div th:replace="header::header"></div>
+
+<!--        main body-->
+        <section class="pb-2">
+            <div class="container pr-2 pl-2">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="hero__categories">
+                            <div class="hero__categories__all">
+                                <i class="fa fa-bars"></i>
+                                <span>Danh mục</span>
+                            </div>
+                            <ul>
+                                <li><a href="#">Adidas</a></li>
+                                <li><a href="#">Nike</a></li>
+                                <li><a href="#">Balenciga</a></li>
+                                <li><a href="#">Vans</a></li>
+                                <li><a href="#">Converse</a></li>
+                                <li><a href="#">Puma</a></li>
+                                <li><a href="#">New Balen</a></li>
+                                <!-- <li><a href="#">Papayaya & Crisps</a></li>
+                                <li><a href="#">Oatmeal</a></li>
+                                <li><a href="#">Fresh Bananas</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="hero__search">
+                            <div class="hero__search__form">
+<!--                                <form action="#">-->
+<!--                                    <input type="text" placeholder="search...">-->
+<!--                                    <button type="submit" class="site-btn">SEARCH</button>-->
+<!--                                </form>-->
+                                <form class="form-inline my-2 my-lg-0 mr-3">
+                                    <input class="form-control-sm border-bottom" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success " type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+<!--                        <div class="hero__item set-bg" data-setbg="/image/slide3.jpg">-->
+<!--                            <div class="hero__text">-->
+<!--                                <span>shoes</span>-->
+<!--                                <h2>Giày 100%<br />Chính hãng</h2>-->
+<!--                                <p>Miễn phí vận chuyển</p>-->
+<!--                                <a href="#" class="primary-btn">Mua ngay</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+                        <div id="demo" class="carousel slide mt-2" data-ride="carousel">
+
+                            <!-- Indicators -->
+                            <ul class="carousel-indicators">
+                                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                <li data-target="#demo" data-slide-to="1"></li>
+                                <li data-target="#demo" data-slide-to="2"></li>
+                            </ul>
+
+                            <!-- The slideshow -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/image/slide/slide1.jpg" alt="Los Angeles">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/image/slide/slide2.jpg" alt="Chicago">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/image/slide/slide3.jpg" alt="New York">
+                                </div>
+                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--        banner-->
+        <div class="mt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="banner_item align-items-center" style="background-image:url(/image/cat_11.jpg)">
+                            <div class="banner_category">
+                                <a href="#">adidas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="banner_item align-items-center" style="background-image:url(/image/cat_22.jpg)">
+                            <div class="banner_category">
+                                <a href="#">nike</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="banner_item align-items-center" style="background-image:url(/image/cat_33.jpg)">
+                            <div class="banner_category">
+                                <a href="#">vans</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--    tat ca sp-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col text-center">
+                <div class="font-weight-bold text-uppercase">
+                    <h2>Tat ca san pham</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-deck">
+            <div class="card">
+                <img src="/image/cat_11.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with tent is a little bit longer.</p>
+                    <button class="btn btn-outline-info">View product</button>
+                </div>
+<!--                <div class="card-footer">-->
+<!--                    <small class="text-muted">Last updated 3 mins ago</small>-->
+<!--                </div>-->
+            </div>
+            <div class="card">
+                <img src="/image/cat_11.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below </p>
+                    <button class="btn btn-outline-info">View product</button>
+                </div>
+<!--                <div class="card-footer">-->
+<!--                    <small class="text-muted">Last updated 3 mins ago</small>-->
+<!--                </div>-->
+            </div>
+            <div class="card">
+                <img src="/image/cat_11.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with suo show that equal height action.</p>
+                    <button class="btn btn-outline-info">View product</button>
+                </div>
+<!--                <div class="card-footer">-->
+<!--                    <small class="text-muted">Last updated 3 mins ago</small>-->
+<!--                </div>-->
+            </div>
+
+            <div class="card">
+                <img src="/image/cat_22.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with</p>
+                    <button class="btn btn-outline-info align-bottom">View product</button>
+                </div>
+                <!--                <div class="card-footer">-->
+                <!--                    <small class="text-muted">Last updated 3 mins ago</small>-->
+                <!--                </div>-->
+            </div>
+        </div>
+    </div>
+
+
+<!--    footer-->
+    <div th:replace="footer:: footer"></div>
+</body>
+</html>
